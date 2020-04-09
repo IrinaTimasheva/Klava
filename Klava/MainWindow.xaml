@@ -1,0 +1,98 @@
+﻿<Window x:Class="Klava.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klava"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel Margin="0,131,0,44">
+            <DockPanel.Resources>
+                <Style x:Key="myButton">
+                    <Setter Property="Button.Height" Value="35"/>
+                    <Setter Property="Button.Width" Value="35"/>
+                    <Setter Property="Button.FontSize" Value="15"/>
+                </Style>
+                <Style x:Key="otherButton">
+                    <Setter Property="Button.Height" Value="35"/>
+                    <Setter Property="Button.Width" Value="62"/>
+                    <Setter Property="Button.FontSize" Value="15"/>
+                </Style>
+            </DockPanel.Resources>
+
+
+            <StackPanel HorizontalAlignment="Center" Height="33" Orientation="Horizontal" DockPanel.Dock="Top">
+                <TextBox x:Name="textbox1" Width="400" BorderThickness="2" BorderBrush="Black" Margin="0,0,0,5" CharacterCasing="Lower"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Height="35" Orientation="Horizontal" DockPanel.Dock="Top">
+                <!--<Button Style="{StaticResource otherButton}">@#$</Button>-->
+                <Button x:Name="Button1" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">1</Button>
+                <Button x:Name="Button2" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">2</Button>
+                <Button x:Name="Button3" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">3</Button>
+                <Button x:Name="Button4" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">4</Button>
+                <Button x:Name="Button5" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">5</Button>
+                <Button x:Name="Button6" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">6</Button>
+                <Button x:Name="Button7" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">7</Button>
+                <Button x:Name="Button8" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">8</Button>
+                <Button x:Name="Button9" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">9</Button>
+                <Button x:Name="Button0" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">0</Button>
+                <Button x:Name="ButtonMinus" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">-</Button>
+                <Button x:Name="ButtonPlus" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">+</Button>
+                
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Height="35" Orientation="Horizontal" DockPanel.Dock="Top">
+                <!--<Button Style="{StaticResource otherButton}">@#$</Button>-->
+                <Button x:Name="ButtonQ" Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">Q</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">W</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">E</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">R</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">T</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">Y</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">U</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">I</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">O</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">P</Button>
+              
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Height="35" Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">A</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">S</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">D</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">F</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">G</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">H</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">J</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">K</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">L</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">;</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">:</Button>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Height="35" Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">Z</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">X</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">C</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">V</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">B</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">N</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">M</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">,</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" Background="#F8953A">.</Button>
+                <Button Style="{StaticResource myButton}" Click="Button_Click" RenderTransformOrigin="0.629,0.395" Background="#F8953A">/</Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Height="35" Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button x:Name="ButtonShift" Content="shift" RenderTransformOrigin="0.854,0.698" DockPanel.Dock="Left" Width="65" Background="#FFFF00" Click="Button_Click_2"/>
+                <Button Content="Пробел" Click="Button_Click_1" DockPanel.Dock="Right" Width="250" Background="#FFFF00" Height="35"/>
+                <Button x:Name="ButtonCapsLock" Content="capslock" DockPanel.Dock="Left" Width="65"  Background="#FFFF00" Click="Button_Click_3"/>
+            </StackPanel>
+      
+        </DockPanel>
+
+    </Grid>
+</Window>
+
